@@ -8,7 +8,7 @@ int main(int c, char ** v){
   struct hostent *h;
   h = gethostbyname(v[1]);
   
-  if(NULL != h)
+  if(NULL == h)
   {
     print("Error\n");
     return -1;
